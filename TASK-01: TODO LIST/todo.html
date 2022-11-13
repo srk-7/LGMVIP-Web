@@ -1,1 +1,50 @@
-
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>TO-DO LIST</title>
+</head>
+<body align="center">
+	<div class="container">
+		<div id="newtask">
+			<h1>My To Do List</h1><br>
+			<input type="text" id="task" placeholder="Enter the Task"> 
+			<button id="push">Add</button>
+		</div>
+		<div id="tasks"></div>
+	</div>
+	<script>
+		document.querySelector('#push').onclick=
+		function(){
+			if(document.querySelector('#newtask input').value.length == 0){
+				alert("Please Enter the Task Name");
+			}
+		else{
+			document.querySelector('#tasks').innerHTML
+			+= `<div class="task">
+			<span id="taskname">
+			${document.querySelector("#newtask input").value}
+			</span>
+			<button class="delete">X</button>
+			</div>
+			`;
+			var ctasks = document.querySelectorAll('.delete');
+			for (var i = 0; i < ctasks.length; i++) {
+				ctasks[i].onclick = function (){
+					this.parentNode.remove();
+				}
+				
+			}
+			var tasks = document.querySelectorAll('#taskname');
+			for (var i = 0; i < tasks.length; i++) {
+				tasks[i].onclick = function (){
+					this.classList.toggle('completed');
+				}
+			}
+			document.querySelector('#newtasks input').value = "";
+		}
+	}
+	</script>
+</body>
+</html>
