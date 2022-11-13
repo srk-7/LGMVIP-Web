@@ -1,1 +1,40 @@
-
+<html> 
+	<head>
+	  <meta charset="utf-8">
+	  <title>Calculator</title>
+	  <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<table class="calculator" >
+		  <tr>
+			<td colspan="3"> <input class="display-box" type="text" id="result" disabled /> </td>
+			<td> <input type="button" value="AC" onclick="clr()" id="btn" /> </td>
+		  </tr>
+		  <tr>
+			<td> <input type="button" value="1" onclick="disp('1')" /> </td>
+			<td> <input type="button" value="2" onclick="disp('2')" /> </td>
+			<td> <input type="button" value="3" onclick="disp('3')" /> </td>
+			<td> <input type="button" value="÷" onclick="disp('/')" /> </td>
+		  </tr>
+		  <tr>
+			<td> <input type="button" value="4" onclick="disp('4')" /> </td>
+			<td> <input type="button" value="5" onclick="disp('5')" /> </td>
+			<td> <input type="button" value="6" onclick="disp('6')" /> </td>
+			<td> <input type="button" value="-" onclick="disp('-')" /> </td>
+		  </tr>
+		  <tr>
+			<td> <input type="button" value="7" onclick="disp('7')" /> </td>
+			<td> <input type="button" value="8" onclick="disp('8')" /> </td>
+			<td> <input type="button" value="9" onclick="disp('9')" /> </td>
+			<td> <input type="button" value="+" onclick="disp('+')" /> </td>
+		  </tr>
+		  <tr>
+			<td> <input type="button" value="." onclick="disp('.')" /> </td>
+			<td> <input type="button" value="0" onclick="disp('0')" /> </td>
+			<td> <input type="button" value="=" onclick="cal()" id="btn" /> </td>
+			<td> <input type="button" value="×" onclick="disp('*')" /> </td>
+		  </tr>
+		</table>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
