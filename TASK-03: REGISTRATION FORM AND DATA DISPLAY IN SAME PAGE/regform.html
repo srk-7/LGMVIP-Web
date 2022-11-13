@@ -1,1 +1,70 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Student Registration Form</h1>
+        <div class="container_left">
+            <div class="form">
+                <h2>Enrollment Form</h2>
+                <form>
+                    <div class="name">
+                        <label>Name :</label>
+                        <input type="text" id="name" placeholder="Enter your name" >
+                    </div>
+                    <div class="email">
+                        <label>Email :</label>
+                        <input type="email" id="email" placeholder="Enter your email" >
+                    </div>
+					<div class="Phone Number">
+                        <label>Phone Number :</label>
+                        <input type="text" id="phno" placeholder="Enter your phone number" maxlength="10" >
+                    </div>
+                    <div class="DOB">
+                        <label>Date of Birth :</label>
+                        <input type="date" id="dob" name="dob" >
+                    </div>
+                    <div class="gender">
+                        <label>Gender : </label>
+                        <input type="radio" name="male-female" id="male" value="Male" class="gender">Male
+                        <input type="radio" name="male-female" id="female" value="Female" class="gender">Female
+                    </div><br>
+					<div class="College Name">
+                        <label>College Name :</label>
+                        <input type="text" id="college" placeholder="Enter your College Name" >
+                    </div>
+					<div class="branch">
+                        <label>Branch :</label>
+                        <input type="radio" name="branches" value="CSE" id="CSE" class="branch">CSE
+                        <input type="radio" name="branches" value="IT" id="IT" class="branch">IT
+                        <input type="radio" name="branches" value="ECE" id="ECE" class="branch">ECE
+						<input type="radio" name="branches" value="EEE" id="EEE" class="branch">EEE
+						<input type="radio" name="branches" value="MECH" id="MECH" class="branch">MECH
+						<input type="radio" name="branches" value="CIVIL" id="CIVIL" class="branch">CIVIL
+                    </div>
+					<div class="Image">
+                        <label>Passport size Image :</label>
+						<input type="url" id="url"  placeholder="Image URL" required >
+                    </div><br>
+                    <div class="button">
+                        <button type="Submit" id="Submit">Submit</button>
+                        <button type="reset" id="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+            <div class="container_right">
+                <h2>Enrolled Student Details</h2>
+                <div class="cardContainer" id="cardContainer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
