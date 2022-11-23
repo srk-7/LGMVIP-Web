@@ -1,1 +1,75 @@
+nav {
+  height: 20vh;
+  width: 100%;
+  color: #000;
 
+}
+.navitems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.loader{
+	height:20rem;
+	width:20rem;
+}
+.navitems h2 {
+  font-size: 30px;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 1.5em;
+}
+
+.navitems button {
+  width: 25%;
+  height: 10vh;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  background-color: #79a7f0;
+  font-family: serif;
+  font-size: 20px;
+  margin: auto 2em;
+}
+
+.fetchbtn:hover {
+  background-color: rgb(26, 95, 224);
+  cursor: pointer;
+  font-size:x-large;
+  color: aliceblue;
+}
+.userdatacontainer {
+  width: 100%;
+  height: fit-content;
+  background-color:white;
+}
+#main {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+.name:hover {
+  cursor: pointer;
+}
+
+.avatar {
+  border-radius: 30%;
+}
+
+.profile_cont {
+  border-radius: 15%;
+  background-color: black;
+  color:white;
+  margin: 5px;
+  padding: 10px;
+  width: 30%;
+  text-align: center;
+  transition: transform ease 0.2s;
+  opacity: 0.8;
+  margin-top: 8vh;
+}
+
+.profile_cont:hover {
+  opacity: 1;
+  cursor: pointer;
+}
